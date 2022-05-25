@@ -1,0 +1,38 @@
+* 
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1
+{
+    font-family: 'Shrikhand', cursive;
+}
+.localisation
+{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: medium;
+    padding-top: 4%;
+    height: 35px;
+    padding-right: 7%;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 5px 0px lightgrey inset;
+}
+main i
+{
+    padding-right: 5%;
+}
+.script
+{
+    display: flex;
+    flex-direction: column;
+}
