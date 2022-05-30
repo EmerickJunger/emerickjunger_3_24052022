@@ -31,8 +31,24 @@ main i
 {
     padding-right: 5%;
 }
-.script
+.reservation
 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 10%;
+}
+.discover
+{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-left: 2.5%;
+    font-weight: 300;
+    font-size: large;
+    text-align: center;
+    margin-top: 3%;
 }
