@@ -75,22 +75,31 @@ main i
 .working
 {
     width: 90%;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-top: 10%;
 }
-.list p
+.list li
 {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    width: 55%;
     margin-top: 15%;
     margin-bottom: 20%;
     margin-left: 10%;
     border: solid 2px red;
     padding-top: 7%;
     padding-bottom: 7%;
-    padding-right: 17%;
+    padding-right: 11%;
     padding-left: 17%;
     border-radius: 20px;
     background-color: #F5F5F5;
+}
+.fas
+{
+    padding: 0;
+    margin-left: -15%;
+    margin-right: 10%;
+}
+.list li :hover
+{
+    background-color: aqua;
 }
