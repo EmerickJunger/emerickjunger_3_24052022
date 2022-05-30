@@ -78,28 +78,89 @@ main i
     margin-left: 7%;
     margin-top: 10%;
 }
-.list li
+.etape
 {
     display: flex;
     width: 55%;
     margin-top: 15%;
     margin-bottom: 20%;
     margin-left: 10%;
-    border: solid 2px red;
     padding-top: 7%;
     padding-bottom: 7%;
     padding-right: 11%;
     padding-left: 17%;
     border-radius: 20px;
     background-color: #F5F5F5;
+    box-shadow: 2px 2px 20px lightgray;
 }
-.fas
+.logo
 {
     padding: 0;
     margin-left: -15%;
     margin-right: 10%;
 }
-.list li :hover
+.etape:hover
 {
-    background-color: aqua;
+    background-color: #9356DC;
+    opacity: 0.1;
+    color: black;
+}
+.lieux
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 92%;
+    margin-left: 4%;
+}
+.restaurant
+{
+    height: 10%;
+}
+.restaurant img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+}
+/*FOOTER*/
+footer
+{
+    background-color: #303030;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+footer li
+{
+    display: flex;
+    margin-left: 5%;
+    width: 90%;
+}
+.titre
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: large;
+    margin-bottom: 5%;
+}
+.font
+{
+    margin-right: 12px;
+}
+.font2
+{
+    margin-right: 11px;
+}
+.fa-handshake-angle:before
+{
+    font-size: x-small;
+}
+.fa-utensils:before
+{
+    font-size: small;
+}
+.info
+{
+    margin-bottom: 2%;
 }
