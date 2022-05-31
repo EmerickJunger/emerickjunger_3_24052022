@@ -55,6 +55,10 @@ main i
     text-align: center;
     margin-top: 3%;
 }
+.list
+{
+    margin-bottom: 18%;
+}
 .script p
 {
     margin-left: 21%;
@@ -77,13 +81,14 @@ main i
     width: 90%;
     margin-left: 7%;
     margin-top: 10%;
+    margin-bottom: 8%;
 }
 .etape
 {
-    display: flex;
+    position:relative;
     width: 55%;
-    margin-top: 15%;
-    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-bottom: 7%;
     margin-left: 10%;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -92,26 +97,49 @@ main i
     border-radius: 20px;
     background-color: #F5F5F5;
     box-shadow: 2px 2px 20px lightgray;
+    font-weight: 600;
+}
+#number
+{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    left: -1%;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 6%;
 }
 .logo
 {
     padding: 0;
     margin-left: -15%;
     margin-right: 10%;
+    color: grey;
 }
 .etape:hover
 {
-    background-color: #9356DC;
-    opacity: 0.1;
+    background-color: #9356DC20;
+    /*opacity: 0.1;*/
     color: black;
 }
+.etape:hover .logo
+{
+    color: #9356DC;
+}
+ul
+{
+    list-style-type: none;
+}
+/*RESTAURANTS*/
 .lieux
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 92%;
-    margin-left: 4%;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-bottom: 10%;
 }
 .restaurant
 {
@@ -120,6 +148,8 @@ main i
     border-radius: 25px;
     margin-bottom: 5%;
     box-shadow: 2px 2px 20px lightgray;
+    width: 92%;
+    margin-left: 4%;
 
 }
 .restaurant img
@@ -147,6 +177,12 @@ main i
 {
     text-decoration: none;
 }
+.lieux h2
+{
+    margin-left: 4%;
+    margin-bottom: 7%;
+    margin-top: 12%;
+}
 .fa-heart
 {
     display: flex;
@@ -159,6 +195,10 @@ main i
 {
     font-size: x-large;
 }
+/*.fa-heart:hover
+{
+
+}*/
 /*FOOTER*/
 footer
 {
