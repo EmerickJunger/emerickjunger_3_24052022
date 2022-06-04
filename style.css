@@ -285,6 +285,7 @@ footer li
     background-color: #F5F5F5;
     width: 100%;
     top: 47%;
+    padding-bottom: 7%;
 }
 .tryptique
 {
@@ -316,13 +317,13 @@ footer li
 }
 .choix h2
 {
-    font-size: large;
+    font-size: 18px;
     margin-left: 3%;
     padding-top: 2%;
 }
 .choix h3
 {
-    font-size: medium;
+    font-size: 15px;
     font-weight: 400;
     margin-left: 3%;
     margin-top: 2%;
@@ -342,15 +343,15 @@ footer li
     display: flex;
     flex-direction: row-reverse;
     margin-right: 7%;
-    margin-top: -6%;
+    margin-top: -5.4%;
     font-weight: 600;
     font-style: normal;
 }
 .coeur::before
 {
+    position: absolute;
     display: flex;
     font-size: x-large;
-    margin-top: -4%;
-    padding-bottom: 4%;
-    margin-right: 3%;
+    margin-top: -3%;
+    margin-right: 2.5%;
 }
