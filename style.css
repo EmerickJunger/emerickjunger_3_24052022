@@ -337,3 +337,20 @@ footer li
     border-bottom: solid 2px #99E2D0;
     width: 12%;
 }
+.choix em
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 7%;
+    margin-top: -6%;
+    font-weight: 600;
+    font-style: normal;
+}
+.coeur::before
+{
+    display: flex;
+    font-size: x-large;
+    margin-top: -4%;
+    padding-bottom: 4%;
+    margin-right: 3%;
+}
