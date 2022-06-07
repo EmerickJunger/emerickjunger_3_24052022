@@ -294,7 +294,7 @@ footer li
     display: flex;
     flex-wrap: wrap;
 }
-.tryptique p
+button
 {
     margin-left: 26%;
     margin-top: 8%;
@@ -339,7 +339,7 @@ footer li
     border-bottom: solid 2px #99E2D0;
     width: 12%;
 }
-.choix em
+.choix p
 {
     display: flex;
     flex-direction: row-reverse;
@@ -361,10 +361,36 @@ footer li
     text-decoration: none;
     color: white;
 }
+.entree
+{
+    display: flex;
+}
+.entree p
+{
+    display: flex;
+    margin: 0;
+    margin-bottom: 1%;
+    width: 20%;
+    background-color: red;
+    align-items: flex-end;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 80%;
+}
+.entree:active .content
+{
+    width: 50%;
+}
+
 /*ANIMATIONS*/
 .loader
 {
-    display: inline-block;
     position: relative;
     width: 100%;
     height: 667px;
@@ -372,9 +398,7 @@ footer li
 }
 .loader div 
 {
-    /*display: inline-block;*/
     position: absolute;
-    left: 8px;
     width: 16px;
     background: linear-gradient(#FF79DA, #9356DC);
     animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
@@ -413,7 +437,7 @@ footer li
     font-family: 'Shrikhand', cursive;
     color: white;
     text-align: center;
-    height: 667px;
+    height: 100px;
     top: 35%;
     right: 27%;
 }
