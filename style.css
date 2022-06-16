@@ -73,6 +73,11 @@ main i
     background: linear-gradient(#FF79DA, #9356DC);
     border: none;
 }
+.script button:hover
+{
+    background: linear-gradient(#FF79DA99, #9356DC99);
+    box-shadow: 2px 2px 20px gray;
+}
 .script
 {
     width: 100%;
@@ -355,11 +360,28 @@ button
 }
 .coeur::before
 {
+    display: inline-block;
     position: absolute;
-    display: flex;
     font-size: x-large;
     margin-top: -3%;
     margin-right: 2.5%;
+}
+.love::before
+{
+    display: none;
+    position: absolute;
+    font-size: x-large;
+    margin-top: 10%;
+    margin-right: 2.5%;
+}
+.coeur:hover
+{
+    display: none;
+}
+.love:hover
+{
+    display: inline-block;
+    color: #9356DC;
 }
 .mail a
 {
@@ -394,39 +416,28 @@ button
     margin-left: 5%;
     padding-left: 8%;
 }
-/*.entree:active .fa.fa-circle-check
-{
-    transform: rotate(-360deg);
-    transition-duration: 0.5s
-}*/
 .slide
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*padding-bottom: 0%;*/
+    padding-bottom: 5%;
     background-color: #99E2D0;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     font-size: x-large;
     color: white;
-
-
-    
-    box-shadow: 0 5px 10px transparent;
-    
-    /*flex-basis: 6rem;*/
     /*margin: -1rem -6.5rem -1rem 0;*/
 
-    transition-duration: 0.5s
+    /*transition-duration: 0.5s*/
 }
-/*.fa-circle-check
+.fa-circle-check
 {
     padding: 0;
     height: 5%;
-    transform: rotate(-360deg);
-    transition-duration: 0.5s
-}*/
+    /*transform: rotate(-360deg);
+    transition-duration: 0.5s*/
+}
 
 /*ANIMATIONS*/
 .loader
