@@ -212,12 +212,15 @@ ul
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    margin-top: -13%;
     margin-right: 3%;
 }
 .fa-heart:before
 {
     font-size: x-large;
+}
+.love
+{
+    bottom: 11%;
 }
 /*FOOTER*/
 footer
@@ -293,7 +296,6 @@ footer li
     background-color: #F5F5F5;
     width: 100%;
     top: 47%;
-    padding-bottom: 7%;
 }
 .tryptique
 {
@@ -339,7 +341,7 @@ button
     margin-left: 3%;
     margin-top: 2%;
 }
-.variété
+.variete
 {
     margin-left: 6%;
     font-size: large;
@@ -358,30 +360,22 @@ button
     font-weight: 600;
     font-style: normal;
 }
-.coeur::before
+.coeur
 {
     display: inline-block;
     position: absolute;
     font-size: x-large;
-    margin-top: -3%;
-    margin-right: 2.5%;
-}
-.love::before
-{
-    display: none;
-    position: absolute;
-    font-size: x-large;
-    margin-top: 10%;
-    margin-right: 2.5%;
+    margin-top: -15%;
+    right: 1%;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
 }
 .coeur:hover
 {
-    display: none;
-}
-.love:hover
-{
-    display: inline-block;
-    color: #9356DC;
+    background: linear-gradient(180deg, #9356dc 20%,  #ff79da 80%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px transparent;
+    -webkit-text-fill-color: transparent;
 }
 .mail a
 {
@@ -449,24 +443,25 @@ button
 }
 .loader div 
 {
+    margin-top: 80%;
     position: absolute;
-    width: 16px;
+    width: 14px;
     background: linear-gradient(#FF79DA, #9356DC);
     animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .loader div:nth-child(1) 
 {
-    left: 44%;
+    left: 43%;
     animation-delay: -0.24s;
 }
 .loader div:nth-child(2) 
 {
-    left: 50%;
+    left: 49%;
     animation-delay: -0.12s;
 }
 .loader div:nth-child(3) 
 {
-    left: 56.3%;
+    left: 55.3%;
     animation-delay: 0;
 }
 @keyframes loader
