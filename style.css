@@ -6,6 +6,22 @@
     margin: 0;
     padding: 0;
 }
+/*BODY*/
+body
+{
+    animation: fade 1s;
+}
+@keyframes fade 
+{
+    0% 
+    {
+      opacity: 0;
+    }
+    100% 
+    {
+      opacity: 1;
+    }
+}
 /*HEADER*/
 header
 {
@@ -373,7 +389,7 @@ button
 .coeur:hover
 {
     background: linear-gradient(180deg, #9356dc 20%,  #ff79da 80%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-stroke: 1px transparent;
     -webkit-text-fill-color: transparent;
 }
@@ -436,10 +452,16 @@ button
 /*ANIMATIONS*/
 .loader
 {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     width: 100%;
     height: 667px;
     background-color: #303030;
+    animation: fondue 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
 }
 .loader div 
 {
@@ -448,6 +470,7 @@ button
     width: 14px;
     background: linear-gradient(#FF79DA, #9356DC);
     animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    
 }
 .loader div:nth-child(1) 
 {
@@ -467,15 +490,23 @@ button
 @keyframes loader
 {
 0% 
-{
+    {
     top: 8px;
     height: 64px;
-}
+    }
 50%, 100% 
-{
+    {
     top: 24px;
     height: 32px;
+    }
 }
+@keyframes fondue
+{
+    100% 
+    {
+      opacity: 0;
+      z-index: -1;
+    }
 }
 .loader h1
 {
