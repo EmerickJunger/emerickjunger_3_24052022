@@ -349,6 +349,7 @@ button
     font-size: 18px;
     margin-left: 3%;
     padding-top: 2%;
+    width: 94%;
 }
 .choix h3
 {
@@ -356,6 +357,7 @@ button
     font-weight: 400;
     margin-left: 3%;
     margin-top: 2%;
+    width: 94%;
 }
 .variete
 {
@@ -389,7 +391,7 @@ button
 .coeur:hover
 {
     background: linear-gradient(180deg, #9356dc 20%,  #ff79da 80%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-stroke: 1px transparent;
     -webkit-text-fill-color: transparent;
 }
@@ -418,37 +420,70 @@ button
     justify-content: space-between;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 80%;
-}
-.entree:active .slide
-{
-    width: 20%;
-    margin-left: 5%;
-    padding-left: 8%;
+    width: 80%; 
 }
 .slide
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 5%;
+    align-items: center;
     background-color: #99E2D0;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     font-size: x-large;
     color: white;
-    /*margin: -1rem -6.5rem -1rem 0;*/
-
-    /*transition-duration: 0.5s*/
+    visibility: hidden;
+}
+.content h2, .content h3
+{
+    overflow : hidden;
+    white-space : nowrap;
+    text-overflow : ellipsis;
+}
+.entree:active .slide
+{
+    animation: slide 1s linear forwards;
+    visibility: visible;
+    width: 18%;
+    margin-left: 2%;
+}
+.entree:active .fa-circle-check
+{
+    animation: rotation 1s linear forwards;
+}
+.slide:hover
+{
+    animation: slide 1s linear forwards;
+    visibility: visible;
 }
 .fa-circle-check
 {
     padding: 0;
-    height: 5%;
-    /*transform: rotate(-360deg);
-    transition-duration: 0.5s*/
+    margin: 0;
 }
-
+.check
+{
+    transform-origin: center;
+}
+@keyframes slide
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 25%;
+    }
+}
+@keyframes rotation
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
 /*ANIMATIONS*/
 .loader
 {
@@ -470,7 +505,6 @@ button
     width: 14px;
     background: linear-gradient(#FF79DA, #9356DC);
     animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-    
 }
 .loader div:nth-child(1) 
 {
