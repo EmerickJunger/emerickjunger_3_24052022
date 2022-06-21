@@ -441,6 +441,37 @@ button
     white-space : nowrap;
     text-overflow : ellipsis;
 }
+@keyframes slide
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 25%;
+    }
+}
+@keyframes rotation
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes slideup
+{
+    0%
+    {
+        transform: translateY(20px);
+        opacity: 0%;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
 .entree:active .slide
 {
     animation: slide 1s linear forwards;
@@ -482,44 +513,51 @@ button
 {
     transform-origin: center;
 }
-/*.slides
+
+.slides
 {
-    animation: slideup 1s forwards;
-}*/
-@keyframes slide
-{
-    0%
-    {
-        width: 0%;
-    }
-    100%
-    {
-        width: 25%;
-    }
+    animation: slideup 1s 1.9s forwards;
 }
-@keyframes rotation
+.slides-1
 {
-    100%
-    {
-        transform: rotate(360deg);
-    }
+    animation: slideup 1s 2.1s forwards;
 }
-/*@keyframes slideup
+.slides-2
 {
-    0%
-    {
-        transform: translateY(20px);
-        opacity: 0%;
-    }
-    100%
-    {
-        transform: translateY(0px);
-        opacity: 100%;
-    }
-}*/
+    animation: slideup 1s 2.3s forwards;
+}
+.slides-3
+{
+    animation: slideup 1s 2.5s forwards;
+}
+.slides-4
+{
+    animation: slideup 1s 2.7s forwards;
+}
+.slides-5
+{
+    animation: slideup 1s 2.9s forwards;
+}
+.slides-6
+{
+    animation: slideup 1s 3.1s forwards;
+}
+.slides-7
+{
+    animation: slideup 1s 3.3s forwards;
+}
+.slides-8
+{
+    animation: slideup 1s 3.5s forwards;
+}
+.slides-9
+{
+    animation: slideup 1s 3.7s forwards;
+}
 /*ANIMATIONS*/
 .loader
 {
+    /*display: none;*/
     position: fixed;
     top: 0;
     left: 0;
