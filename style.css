@@ -637,4 +637,125 @@ button
             height: 62px;
         }
     }
+    header h1
+    {
+        font-size: 60px;
+    }
+    header
+    {
+        height: 100px;
+    }
+    .localisation
+    {
+        font-size: x-large;
+        height: 60px;
+    }
+    .reservation
+    {
+        font-size: xx-large;
+    }
+    .discover
+    {
+        font-size: x-large;
+    }
+    button
+    {
+        font-size: x-large;
+        width: 50%;
+        margin-left: 25%;
+        height: 80px;
+        margin-top: 5%;
+    }
+    .script
+    {
+        height: 350px;
+    }
+    .working
+    {
+        font-size: xx-large;
+    }
+    .etape
+    {
+        font-size: x-large;
+    }
+    .number
+    {
+        font-size: x-large;
+        height: 40px;
+        width: 40px;
+    }
+    .lieux h2
+    {
+        font-size: xx-large;
+    }
+    .restaurant figcaption
+    {
+        font-size: x-large;
+        height: 100px;
+        margin-top: 3%;
+    }
+    .restaurant img
+    {
+        height: 350px;
+    }
+    .restaurant p
+    {
+        margin-top: 1%;
+    }
+    .fa-heart:before
+    {
+        font-size: xx-large;
+    }
+    .fa-heart
+    {
+        margin-right: 1%;
+    }
+    .restaurant
+    {
+        margin-bottom: 40px;
+    }
+    .titre
+    {
+        font-size: x-large;
+    }
+    .info
+    {
+        font-size: x-large
+    }
+    .new
+    {
+        font-size: x-large;
+        left: 75%;
+    }
+    .carte
+    {
+        top: 42%;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    .photo img
+    {
+        height: 450px;
+    }
+    .menu h1
+    {
+        font-size: 50px;
+    }
+    .coeur
+    {
+        margin-top: -14%;
+    }
+    .variete
+    {
+        font-size: xx-large;
+        width: 10%;
+    }
+    .choix
+    {
+        height: 100px;
+    }
+    .content h2 , .content h3
+    {
+        font-size: x-large;
+    }
 }
