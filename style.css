@@ -617,7 +617,8 @@ button
     }
     .loader h1
     {
-        right: 38.5%;
+        right: 25.5%;
+        font-size: 70px;
     }
     .loader div
     {
@@ -757,5 +758,296 @@ button
     .content h2 , .content h3
     {
         font-size: x-large;
+    }
+    .entree p
+    {
+        font-size: x-large;
+        height: 80%;
+    }
+    .fa-arrow-left::before
+    {
+        font-size: xx-large;
+        margin-left: -170px;
+    }
+    .slide
+    {
+        font-size: xx-large;
+    }
+    .fa-utensils:before, .fa-handshake-angle:before
+    {
+        font-size: large;
+    }
+    .command
+    {
+        width: 30%;
+        margin-left: 35%;
+        margin-bottom: 10%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1920px)
+{
+    .loader
+    {
+        height: 100%;
+    }
+    .loader h1
+    {
+        right: 40%;
+        font-size: 70px;
+    }
+    .loader div
+    {
+        width: 40px;
+        margin-top: 25%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 32px;
+            height: 256px;
+        }
+    50%, 100% 
+        {
+            top: 96px;
+            height: 124px;
+        }
+    }
+    header h1
+    {
+        font-size: 60px;
+    }
+    header
+    {
+        height: 130px;
+    }
+    .localisation
+    {
+        font-size: x-large;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+    main i
+    {
+        padding-right: 3%;
+        margin-left: 2%;
+    }
+    .reservation
+    {
+        padding-top: 3%;
+        font-size: xx-large;
+    }
+    .discover
+    {
+        margin-top: 1%;
+        font-size: x-large;
+    }
+    .script
+    {
+        height: 350px;
+    }
+    button
+    {
+        font-size: x-large;
+        border-radius: 100px;
+        width: 30%;
+        margin-left: 35%;
+        height: 100px;
+        margin-top: 2%;
+        padding: 0;
+    }
+    .working
+    {
+        font-size: xx-large;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .etape
+    {
+        position: absolute;
+        margin: 0;
+        margin-right: 0;
+        border-radius: 100px;
+        width: 17%;
+        padding-left: 5%;
+        padding-right: 0%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: x-large;
+    }
+    .step1
+    {
+        left: 7.5%;
+    }
+    .step2
+    {
+        left: 39%;
+    }
+    .step3
+    {
+        left: 71%;
+    }
+    .number
+    {
+        font-size: x-large;
+        height: 40px;
+        width: 40px;
+        top: 30%;
+    }
+    .lieux h2
+    {
+        font-size: xx-large;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    .restaurant
+    {
+        width: 44%;
+    }
+    .restaurant figcaption
+    {
+        font-size: x-large;
+        height: 100px;
+        margin-top: 3%;
+    }
+    .restaurant img
+    {
+        height: 200px;
+    }
+    .restaurant p
+    {
+        margin-top: 1%;
+    }
+    .fa-heart:before
+    {
+        font-size: xx-large;
+    }
+    .fa-heart
+    {
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .restaurant
+    {
+        margin-bottom: 90px;
+        position: absolute;
+    }
+    .lieux
+    {
+        height: 1000px;
+    }
+    .r1
+    {
+        top: 1670px;
+    }
+    .r2
+    {
+        left: 49%;
+    }
+    .r3
+    {
+        left: 49%;
+        top: 1670px;
+    }
+    .titre
+    {
+        font-size: x-large;
+        margin-bottom: 3%;
+    }
+    .info
+    {
+        font-size: x-large
+    }
+    .new
+    {
+        font-size: x-large;
+        bottom: 75%;
+        left: 78%;
+        border-radius: 10px;
+    }
+    .lieux
+    {
+        padding-bottom: 5%;
+    }
+    footer
+    {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .carte
+    {
+        top: 75.4%;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+    }
+    .menu h1
+    {
+        padding-bottom: 4%;
+    }
+    .photo img
+    {
+        height: 850px;
+    }
+    .menu h1
+    {
+        font-size: 60px;
+    }
+    .coeur
+    {
+        margin-top: -8%;
+    }
+    .fa-heart:before
+    {
+        font-size: 60px;
+    }
+    .variete
+    {
+        font-size: xx-large;
+        width: 4%;
+        margin-top: 0%;
+        border-bottom: solid 4px #99E2D0;
+    }
+    .choix
+    {
+        height: 200px;
+        border-radius: 50px;
+    }
+    .content h2 , .content h3
+    {
+        font-size: xx-large;
+    }
+    .entree p
+    {
+        font-size: xx-large;
+        height: 80%;
+    }
+    .fa-arrow-left::before
+    {
+        font-size: xx-large;
+        margin-left: -570px;
+    }
+    .slide
+    {
+        font-size: xx-large;
+    }
+    button
+    {
+        margin-bottom: 10%;
+        font-size: xx-large;
+    }
+    .command
+    {
+        width: 20%;
+        margin-left: 40%;
+    }
+    .fa-utensils:before, .fa-handshake-angle:before
+    {
+        font-size: x-large;
+    }
+    .bouton
+    {
+        font-size: x-large;
+        width: 20%;
+        margin-left: 40%;
     }
 }
