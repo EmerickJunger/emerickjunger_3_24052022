@@ -298,7 +298,7 @@ footer li
     border-top-right-radius: 30px;
     background-color: #F5F5F5;
     width: 100%;
-    top: 47%;
+    top: 43.3%;
 }
 .tryptique
 {
@@ -326,7 +326,7 @@ button
     margin-left: 4%;
     width: 92%;
     border-radius: 12px;
-    height: 65px;
+    height: 85px;
     box-shadow: 2px 2px 20px lightgray;
     margin-bottom: 5%;
 }
@@ -334,7 +334,7 @@ button
 {
     font-size: 18px;
     margin-left: 3%;
-    padding-top: 2%;
+    padding-top: 10px;
     width: 94%;
 }
 .choix h3
@@ -342,8 +342,9 @@ button
     font-size: 15px;
     font-weight: 400;
     margin-left: 3%;
-    /*margin-top: 2%;*/
+    margin-top: 5px;
     width: 94%;
+    padding-bottom: 5px;
 }
 .variete
 {
@@ -359,8 +360,6 @@ button
 {
     display: flex;
     flex-direction: row-reverse;
-    /*margin-right: 7%;*/
-    /*margin-top: -5.4%;*/
     font-weight: 600;
     font-style: normal;
 }
@@ -369,7 +368,7 @@ button
     display: inline-block;
     position: absolute;
     font-size: x-large;
-    margin-top: -16%;
+    margin-top: -2.6em;
     right: 1%;
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: transparent;
@@ -431,11 +430,11 @@ button
 {
     0%
     {
-        width: 0%;
+        width: 0px;
     }
     100%
     {
-        width: 25%;
+        width: 100px;
     }
 }
 @keyframes rotation
@@ -462,15 +461,15 @@ button
 {
     animation: slide 1s linear forwards;
     visibility: visible;
-    width: 18%;
-    margin-left: 2%;
+    /*width: 18%;*/
+    margin-left: 5px;
 }
 .entree:hover .slide
 {
     animation: slide 1s linear forwards;
     visibility: visible;
-    width: 18%;
-    margin-left: 2%;
+    /*width: 18%;*/
+    margin-left: 5px;
 }
 .entree:active .fa-circle-check
 {
@@ -609,6 +608,117 @@ button
     right: 27%;
 }
 /*MEDIAQUERIES*/
+
+@media (min-width: 375px) and (max-width: 664px)
+{
+    .carte
+    {
+        top: 27%;
+    }
+    .loader
+    {
+        height: 100%;
+    }
+    .loader h1
+    {
+        right: 15%;
+        font-size: 50px;
+    }
+    .loader div
+    {
+        width: 16px;
+        margin-top: 450px;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 16px;
+            height: 128px;
+        }
+    50%, 100% 
+        {
+            top: 48px;
+            height: 62px;
+        }
+    }    
+}
+@media (min-width: 550px) and (max-width: 664px)
+{
+    .loader
+    {
+        height: 100%;
+    }
+    .loader h1
+    {
+        right: 27%;
+        font-size: 50px;
+    }
+    .loader div
+    {
+        width: 20px;
+        margin-top: 85%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 16px;
+            height: 128px;
+        }
+    50%, 100% 
+        {
+            top: 48px;
+            height: 62px;
+        }
+    }    
+}
+@media (min-width: 665px) and (max-width: 767px)
+{
+    .carte
+    {
+        top: 26%;
+    }
+    .choix
+    {
+        height: 95px;
+    }
+    .choix p
+    {
+        height: 80%;
+    }
+    .coeur
+    {
+        margin-top: -3.4em;
+    }
+    .loader
+    {
+        height: 100%;
+    }
+    .loader h1
+    {
+        right: 24%;
+        font-size: 70px;
+    }
+    .loader div
+    {
+        width: 28px;
+        margin-top: 70%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 16px;
+            height: 128px;
+        }
+    50%, 100% 
+        {
+            top: 48px;
+            height: 62px;
+        }
+    }                                            
+}
 @media (min-width: 768px) and (max-width: 1024px)
 {
     .loader
@@ -617,13 +727,13 @@ button
     }
     .loader h1
     {
-        right: 25.5%;
+        right: 30%;
         font-size: 70px;
     }
     .loader div
     {
         width: 28px;
-        margin-top: 60%;
+        margin-top: 50%;
     }
     @keyframes loader
     {
@@ -730,21 +840,22 @@ button
     }
     .carte
     {
-        top: 42%;
+        top: 56.1%;
         border-top-left-radius: 60px;
         border-top-right-radius: 60px;
     }
     .photo img
     {
-        height: 450px;
+        height: 600px;
     }
     .menu h1
     {
         font-size: 50px;
+        padding-bottom: 3%;
     }
     .coeur
     {
-        margin-top: -14%;
+        margin-top: -8%;
     }
     .variete
     {
@@ -753,7 +864,24 @@ button
     }
     .choix
     {
-        height: 100px;
+        height: 130px;
+        border-radius: 24px;
+    }
+    .slide
+    {
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+    @keyframes slide
+    {
+    0%
+    {
+        width: 0px;
+    }
+    100%
+    {
+        width: 150px;
+    }
     }
     .content h2 , .content h3
     {
@@ -976,29 +1104,28 @@ button
     }
     .carte
     {
-        top: 75.4%;
+        top: 58.9%;
         border-top-left-radius: 80px;
         border-top-right-radius: 80px;
+        height: 170px;
     }
     .menu h1
     {
-        padding-bottom: 4%;
+        padding-top: 4%;
+        font-size: 40px;
     }
     .photo img
     {
-        height: 850px;
-    }
-    .menu h1
-    {
-        font-size: 60px;
+        height: 600px;
     }
     .coeur
     {
-        margin-top: -8%;
+        margin-top: -11%;
+        margin-right: 5%;
     }
     .fa-heart:before
     {
-        font-size: 60px;
+        font-size: 40px;
     }
     .variete
     {
@@ -1009,17 +1136,22 @@ button
     }
     .choix
     {
-        height: 200px;
-        border-radius: 50px;
+        height: 180px;
+        border-radius: 40px;
     }
     .content h2 , .content h3
     {
-        font-size: xx-large;
+        font-size: x-large;
+    }
+    .slide
+    {
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
     .entree p
     {
-        font-size: xx-large;
-        height: 80%;
+        font-size: x-large;
+        height: 70%;
     }
     .fa-arrow-left::before
     {
@@ -1049,5 +1181,200 @@ button
         font-size: x-large;
         width: 20%;
         margin-left: 40%;
+    }
+    @keyframes slide
+    {
+    0%
+    {
+        width: 0px;
+    }
+    100%
+    {
+        width: 200px;
+    }
+    }
+    .tryptique
+    {
+        padding-top: 2%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1070px)
+{
+    .r1 , .r3
+    {
+        top: 1300px;
+    }
+    .lieux
+    {
+        padding: 0;
+        height: 850px;
+    }
+    .number
+    {
+        height: 30px;
+        width: 30px;
+        font-size: large;
+    }
+    .new
+    {
+        left: 70%;
+    }
+    .loader h1
+    {
+        right: 31%;
+        font-size: 70px;
+    }
+    .loader div
+    {
+        width: 38px;
+        margin-top: 42%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 32px;
+            height: 256px;
+        }
+    50%, 100% 
+        {
+            top: 96px;
+            height: 124px;
+        }
+    }
+}
+@media (min-width: 1070px) and (max-width: 1325px)
+{
+    .r1 , .r3
+    {
+        top: 1400px;
+    }
+    .lieux
+    {
+        padding: 0;
+        height: 900px;
+    }
+    .number
+    {
+        height: 30px;
+        width: 30px;
+        font-size: large;
+    }
+    .new
+    {
+        left: 72%;
+    }
+    .loader h1
+    {
+        right: 33%;
+        font-size: 70px;
+    }
+    .loader div
+    {
+        width: 38px;
+        margin-top: 37%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 32px;
+            height: 256px;
+        }
+    50%, 100% 
+        {
+            top: 96px;
+            height: 124px;
+        }
+    }
+}
+@media (min-width: 1325px) and (max-width: 1450px)
+{
+    .r1 , .r3
+    {
+        top: 1450px;
+    }
+    .lieux
+    {
+        padding: 0;
+        height: 950px;
+    }
+    .number
+    {
+        height: 30px;
+        width: 30px;
+        font-size: large;
+    }
+    .new
+    {
+        left: 72%;
+    }
+    .loader h1
+    {
+        right: 35%;
+        font-size: 70px;
+    }
+    .loader div
+    {
+        width: 38px;
+        margin-top: 35%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 32px;
+            height: 256px;
+        }
+    50%, 100% 
+        {
+            top: 96px;
+            height: 124px;
+        }
+    }
+}
+@media (min-width: 1450px) and (max-width: 1590px)
+{
+    .r1 , .r3
+    {
+        top: 1500px;
+    }
+    .lieux
+    {
+        padding: 0;
+        height: 1000px;
+    }
+    .number
+    {
+        height: 30px;
+        width: 30px;
+        font-size: large;
+    }
+    .new
+    {
+        left: 72%;
+    }
+    .loader h1
+    {
+        right: 37%;
+        font-size: 70px;
+    }
+    .loader div
+    {
+        width: 38px;
+        margin-top: 35%;
+    }
+    @keyframes loader
+    {
+    0% 
+        {
+            top: 32px;
+            height: 256px;
+        }
+    50%, 100% 
+        {
+            top: 96px;
+            height: 124px;
+        }
     }
 }
