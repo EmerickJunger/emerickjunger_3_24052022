@@ -216,6 +216,7 @@ ul
     flex-wrap: wrap;
     flex-direction: row-reverse;
     margin-right: 3%;
+    /*margin-top: 0;*/
 }
 .fa-heart:before
 {
@@ -223,7 +224,26 @@ ul
 }
 .love
 {
-    bottom: 11%;
+    /*bottom: 71%;
+    margin-bottom: -150px;*/
+    font-size: x-large;
+    /*margin-top: 16px;*/
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+}
+.love:hover
+{
+    background: linear-gradient(180deg, #9356dc 20%,  #ff79da 80%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px transparent;
+    -webkit-text-fill-color: transparent;
+}
+.ville
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 /*FOOTER*/
 footer
@@ -289,16 +309,17 @@ footer li
     margin-left: 6%;
     font-size: 28px;
     padding-top: 5%;
-    padding-bottom: 7%;
 }
 .carte
 {
-    position: absolute;
+    display: flex;
+    margin-top: -15%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: #F5F5F5;
     width: 100%;
-    top: 43.3%;
+    justify-content: space-between;
+    align-items: center;
 }
 .tryptique
 {
@@ -365,11 +386,8 @@ button
 }
 .coeur
 {
-    display: inline-block;
-    position: absolute;
     font-size: x-large;
-    margin-top: -2.6em;
-    right: 1%;
+    margin-top: 16px;
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: transparent;
 }
@@ -547,7 +565,7 @@ button
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 667px;
+    height: 100%;
     background-color: #303030;
     animation: fondue 1s;
     animation-delay: 2s;
@@ -555,7 +573,7 @@ button
 }
 .loader div 
 {
-    margin-top: 80%;
+    margin-top: 300px;
     position: absolute;
     width: 14px;
     background: linear-gradient(#FF79DA, #9356DC);
@@ -574,7 +592,7 @@ button
 .loader div:nth-child(3) 
 {
     left: 55.3%;
-    animation-delay: 0;
+    animation-delay: 0s;
 }
 @keyframes loader
 {
@@ -597,67 +615,19 @@ button
       z-index: -1;
     }
 }
-.loader h1
-{
-    position: absolute;
-    font-family: 'Shrikhand', cursive;
-    color: white;
-    text-align: center;
-    height: 100px;
-    top: 35%;
-    right: 27%;
-}
 /*MEDIAQUERIES*/
 
-@media (min-width: 375px) and (max-width: 664px)
-{
-    .carte
-    {
-        top: 27%;
-    }
-    .loader
-    {
-        height: 100%;
-    }
-    .loader h1
-    {
-        right: 15%;
-        font-size: 50px;
-    }
-    .loader div
-    {
-        width: 16px;
-        margin-top: 450px;
-    }
-    @keyframes loader
-    {
-    0% 
-        {
-            top: 16px;
-            height: 128px;
-        }
-    50%, 100% 
-        {
-            top: 48px;
-            height: 62px;
-        }
-    }    
-}
 @media (min-width: 550px) and (max-width: 664px)
 {
     .loader
     {
         height: 100%;
     }
-    .loader h1
-    {
-        right: 27%;
-        font-size: 50px;
-    }
     .loader div
     {
         width: 20px;
-        margin-top: 85%;
+        margin-top: 450px;
+        margin-left: 2%;
     }
     @keyframes loader
     {
@@ -671,14 +641,18 @@ button
             top: 48px;
             height: 62px;
         }
-    }    
+    }
+    .coeur
+    {
+        margin-top: 20px;
+    }
 }
 @media (min-width: 665px) and (max-width: 767px)
 {
-    .carte
+    /*.carte
     {
         top: 26%;
-    }
+    }*/
     .choix
     {
         height: 95px;
@@ -689,21 +663,17 @@ button
     }
     .coeur
     {
-        margin-top: -3.4em;
+        margin-top: 20px;
     }
     .loader
     {
         height: 100%;
     }
-    .loader h1
-    {
-        right: 24%;
-        font-size: 70px;
-    }
     .loader div
     {
-        width: 28px;
-        margin-top: 70%;
+        width: 22px;
+        margin-top: 400px;
+        margin-left: 2%;
     }
     @keyframes loader
     {
@@ -725,15 +695,15 @@ button
     {
         height: 100%;
     }
-    .loader h1
+    /*.loader h1
     {
-        right: 30%;
+        right: 200px;
         font-size: 70px;
-    }
+    }*/
     .loader div
     {
         width: 28px;
-        margin-top: 50%;
+        margin-top: 400px;
     }
     @keyframes loader
     {
@@ -840,7 +810,7 @@ button
     }
     .carte
     {
-        top: 56.1%;
+        /*top: 56.6%;*/
         border-top-left-radius: 60px;
         border-top-right-radius: 60px;
     }
@@ -852,10 +822,6 @@ button
     {
         font-size: 50px;
         padding-bottom: 3%;
-    }
-    .coeur
-    {
-        margin-top: -8%;
     }
     .variete
     {
@@ -918,15 +884,10 @@ button
     {
         height: 100%;
     }
-    .loader h1
-    {
-        right: 40%;
-        font-size: 70px;
-    }
     .loader div
     {
-        width: 40px;
-        margin-top: 25%;
+        width: 38px;
+        margin-top: 350px;
     }
     @keyframes loader
     {
@@ -943,11 +904,11 @@ button
     }
     header h1
     {
-        font-size: 60px;
+        font-size: 40px;
     }
     header
     {
-        height: 130px;
+        height: 70px;
     }
     .localisation
     {
@@ -1079,12 +1040,12 @@ button
     }
     .titre
     {
-        font-size: x-large;
+        font-size: large;
         margin-bottom: 3%;
     }
     .info
     {
-        font-size: x-large
+        font-size: large
     }
     .new
     {
@@ -1104,7 +1065,6 @@ button
     }
     .carte
     {
-        top: 58.9%;
         border-top-left-radius: 80px;
         border-top-right-radius: 80px;
         height: 170px;
@@ -1116,11 +1076,12 @@ button
     }
     .photo img
     {
-        height: 600px;
+        height: 500px;
+        object-position: bottom;
     }
     .coeur
     {
-        margin-top: -11%;
+        margin-top: 50px;
         margin-right: 5%;
     }
     .fa-heart:before
@@ -1129,38 +1090,52 @@ button
     }
     .variete
     {
-        font-size: xx-large;
-        width: 4%;
+        font-size: x-large;
+        width: 100%;
         margin-top: 0%;
-        border-bottom: solid 4px #99E2D0;
+        margin-bottom: 2%;
+        /*border-bottom: solid 4px #99E2D0;*/
+        border-bottom: none;
+    }
+    .variete::after
+    {
+        content: "";
+        width: 4rem;
+        height: 3px;
+        position: absolute;
+        left: 6%;
+        margin-top: 29px;
+        /*top: 45%;*/
+        background-color: #99E2D0;
     }
     .choix
     {
-        height: 180px;
-        border-radius: 40px;
+        height: 100px;
+        width: 25%;
+        margin-left: 6%;
+        border-radius: 20px;
+        margin-bottom: 2%;
     }
     .content h2 , .content h3
     {
-        font-size: x-large;
+        font-size: large;
     }
     .slide
     {
-        border-top-right-radius: 40px;
-        border-bottom-right-radius: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: xx-large;
     }
+
     .entree p
     {
-        font-size: x-large;
-        height: 70%;
+        font-size: large;
+        height: 82%;
     }
     .fa-arrow-left::before
     {
         font-size: xx-large;
         margin-left: -570px;
-    }
-    .slide
-    {
-        font-size: xx-large;
     }
     button
     {
@@ -1169,12 +1144,16 @@ button
     }
     .command
     {
-        width: 20%;
-        margin-left: 40%;
+        width: 10%;
+        margin-left: 45%;
+        font-size: large;
+        height: 60px;
+        margin-bottom: 5%;
+        margin-top: 2%;
     }
     .fa-utensils:before, .fa-handshake-angle:before
     {
-        font-size: x-large;
+        font-size: large;
     }
     .bouton
     {
@@ -1190,7 +1169,7 @@ button
     }
     100%
     {
-        width: 200px;
+        width: 130px;
     }
     }
     .tryptique
@@ -1219,16 +1198,16 @@ button
     {
         left: 70%;
     }
-    .loader h1
+    .fa-arrow-left::before
     {
-        right: 31%;
-        font-size: 70px;
+        font-size: xx-large;
+        margin-left: -270px;
     }
-    .loader div
+    /*.loader div
     {
         width: 38px;
         margin-top: 42%;
-    }
+    }*/
     @keyframes loader
     {
     0% 
@@ -1264,16 +1243,16 @@ button
     {
         left: 72%;
     }
-    .loader h1
+    .fa-arrow-left::before
     {
-        right: 33%;
-        font-size: 70px;
+        font-size: xx-large;
+        margin-left: -170px;
     }
-    .loader div
+    /*.loader div
     {
         width: 38px;
         margin-top: 37%;
-    }
+    }*/
     @keyframes loader
     {
     0% 
@@ -1309,16 +1288,16 @@ button
     {
         left: 72%;
     }
-    .loader h1
+    .fa-arrow-left::before
     {
-        right: 35%;
-        font-size: 70px;
+        font-size: xx-large;
+        margin-left: -170px;
     }
-    .loader div
+    /*.loader div
     {
         width: 38px;
         margin-top: 35%;
-    }
+    }*/
     @keyframes loader
     {
     0% 
@@ -1331,6 +1310,10 @@ button
             top: 96px;
             height: 124px;
         }
+    }
+    .carte
+    {
+        padding-bottom: 50px;
     }
 }
 @media (min-width: 1450px) and (max-width: 1590px)
@@ -1354,16 +1337,16 @@ button
     {
         left: 72%;
     }
-    .loader h1
+    .fa-arrow-left::before
     {
-        right: 37%;
-        font-size: 70px;
+        font-size: xx-large;
+        margin-left: -270px;
     }
-    .loader div
+    /*.loader div
     {
         width: 38px;
         margin-top: 35%;
-    }
+    }*/
     @keyframes loader
     {
     0% 
@@ -1376,5 +1359,16 @@ button
             top: 96px;
             height: 124px;
         }
+    }
+    .carte
+    {
+        padding-bottom: 50px;
+    }
+}
+@media (min-width: 1590px) and (max-width: 1920px)
+{
+    .carte
+    {
+        padding-bottom: 80px;
     }
 }
